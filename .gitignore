@@ -1,0 +1,23 @@
+# Ignore Python-related cache and build artifacts
+*.egg-info/
+build/
+*.pyc
+__pycache__/
+.idea/
+venv/
+dist/
+
+# Ignore subdirectory caches
+LLM_Judgment_acuracy/__pycache__/
+LLM_Judgment_coverage/__pycache__/
+
+# Ignore CSV files in patches_extraction and rating_reviews
+patches_extraction/*.csv
+LLM_Judgment_coverage/*.csv
+rating_reviews/*.csv
+
+# Ignore large dataset and training files
+training/processed_dataset_new_prompt/
+training/checkpoint-36000/
+training/results_36000/
+preparing_dataset_before_filtering/*.npy
